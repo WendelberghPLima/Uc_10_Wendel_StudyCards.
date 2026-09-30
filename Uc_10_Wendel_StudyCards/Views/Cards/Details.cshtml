@@ -1,0 +1,48 @@
+﻿@model Uc_10_Wendel_StudyCards.Models.Card
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Card</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Pergunta)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Pergunta)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Resposta)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Resposta)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DataCriacao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataCriacao)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Baralho)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Baralho.Nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Dificuldade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Dificuldade.Nome)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.CardId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

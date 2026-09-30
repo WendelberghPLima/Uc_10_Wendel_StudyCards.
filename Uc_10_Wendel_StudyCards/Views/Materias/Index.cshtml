@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Uc_10_Wendel_StudyCards.Models.Materia>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="page-header">
+
+    <h1>Matérias</h1>
+
+    <a asp-action="Create"
+       class="btn btn-primary">
+        + Nova Matéria
+    </a>
+
+</div>
+
+<div class="row">
+
+    @foreach(var item in Model)
+    {
+        <div class="col-md-3 mb-4">
+
+            <div class="card-body">
+
+                <h4 class="card-title">
+                    @item.Nome
+                </h4>
+
+                <p class="card-text">
+                    @item.Descricao
+                </p>
+
+                <a asp-action="Details"
+                   asp-route-id="@item.MateriaId"
+                   class="btn btn-outline-primary">
+
+                    Ver detalhes
+
+                </a>
+
+            </div>
+
+        </div>
+    }
+
+</div>

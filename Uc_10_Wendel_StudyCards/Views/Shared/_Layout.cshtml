@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Uc_10_Wendel_StudyCards</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Uc_10_Wendel_StudyCards.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+
+                <a class="navbar-brand logo-studycards"
+                   asp-controller="Home"
+                   asp-action="Index">
+
+                    <img src="~/imagens/logo.png"
+                         alt="StudyCards"
+                         class="logo-navbar" />
+
+                    Study<span class="logo-text">Cards</span>
+                </a>
+
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               asp-controller="Materias"
+                               asp-action="Index">
+                                Matérias
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               asp-controller="Categorias"
+                               asp-action="Index">
+                                Categorias
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               asp-controller="Baralhoes"
+                               asp-action="Index">
+                                Baralhos
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               asp-controller="Cards"
+                               asp-action="Index">
+                                Cards
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               asp-controller="Home"
+                               asp-action="About">
+                                Sobre
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               asp-controller="Home"
+                               asp-action="Contact">
+                                Contato
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="container pb-3">
+        @RenderBody()
+    </main>
+
+
+    <footer class="footer-studycards">
+
+        <div class="container">
+
+            <h5>StudyCards</h5>
+
+            <p>
+                Organize seus estudos de forma simples,
+                moderna e eficiente.
+            </p>
+
+            <small>
+                © 2026 StudyCards
+            </small>
+
+        </div>
+
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Uc_10_Wendel_StudyCards.Models.Baralho>
+
+@{
+    ViewData["Title"] = "Baralhos";
+}
+
+<div class="page-header">
+
+    <h1>Baralhos</h1>
+
+    <a asp-action="Create"
+       class="btn btn-primary">
+
+        + Novo Baralho
+
+    </a>
+
+</div>
+
+<div class="row">
+
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-4 col-md-6 mb-4">
+
+            <div class="baralho-card">
+
+                <img src="~/imagens/baralho-padrao.jpg"
+                     class="baralho-img" />
+
+                <div class="          @item.Nome
+                    </h3>
+
+                    <p>
+                        @item.Descricao
+                    </p>
+
+                    <div class="baralho-info">
+
+                        <small>
+                            📚 @item.Materia?.Nome
+                        </small>
+
+                        <small>
+                            🏷 @item.Categoria?.Nome
+                        </small>
+
+                    </div>
+
+                    <a asp-action="Details"
+                       asp-route-id="@item.BaralhoId"
+                       class="btn btn-outline-primary mt-3">
+
+                        Ver detalhes
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    }
+
+</div>

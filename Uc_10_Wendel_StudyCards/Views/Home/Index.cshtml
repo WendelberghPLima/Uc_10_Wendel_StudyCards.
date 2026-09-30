@@ -1,0 +1,143 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<section class="hero">
+
+    <div class="row align-items-center">
+
+        <div class="col-lg-6">
+
+            <span class="badge bg-warning text-dark mb-3">
+                Estude de forma inteligente
+            </span>
+
+            <h1 class="hero-title">
+                Organize seus estudos
+                com flashcards
+            </h1>
+
+            <p class="hero-text">
+                Crie cards, monte baralhos e revise conteúdos
+                quando quiser.
+            </p>
+
+            <a asp-controller="Baralhoes"
+               asp-action="Index"
+               class="btn btn-warning btn-lg me-2">
+                Começar agora
+            </a>
+
+            <a asp-controller="Baralhoes"
+               asp-action="Index"
+               class="btn btn-outline-light btn-lg">
+                Ver baralhos
+            </a>
+
+        </div>
+
+        <div class="col-lg-6 text-center">
+
+            <div class="hero-card">
+
+                <img src="~/imagens/logo.png"
+                alt="StudyCards" />
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="stats">
+
+    <div class="row text-center">
+
+        <div class="col-md-3">
+            <h3>500+</h3>
+            <p>Cards</p>
+        </div>
+
+        <div class="col-md-3">
+            <h3>50+</h3>
+            <p>Baralhos</p>
+        </div>
+
+        <div class="col-md-3">
+            <h3>20+</h3>
+            <p>Matérias</p>
+        </div>
+
+        <div class="col-md-3">
+            <h3>3</h3>
+            <p>Dificuldades</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="beneficios">
+
+    <h2>Por que usar o StudyCards?</h2>
+
+    <div class="row">
+
+        <div class="col-md-4">
+
+            <div class="feature-card">
+                <h4>📚 Organize matérias</h4>
+
+                <p>
+                    Mantenha seus conteúdos
+                    organizados em um só lugar.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="feature-card">
+                <h4>🗂 Monte baralhos</h4>
+
+                <p>
+                    Agrupe conteúdos relacionados.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="feature-card">
+                <h4>🧠 Revise quando quiser</h4>
+
+                <p>
+                    Estude utilizando flashcards.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="timeline-section">
+
+    <h2>Como estudar</h2>
+
+    <div class="timeline">
+
+        <div>1 • Escolha uma matéria</div>
+        <div>2 • Crie um baralho</div>
+        <div>3 • Adicione seus cards</div>
+        <div>4 • Defina a dificuldade</div>
+        <div>5 • Comece a revisar</div>
+
+    </div>
+
+</section>

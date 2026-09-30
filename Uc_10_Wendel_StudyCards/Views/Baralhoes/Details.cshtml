@@ -1,0 +1,60 @@
+﻿@model Uc_10_Wendel_StudyCards.Models.Baralho
+
+<div class="mb-4">
+
+    <a asp-action="Index">
+        ← Voltar para Baralhos
+    </a>
+
+</div>
+
+<div class="baralho-details">
+
+    <img src="~/imagens/baralho-padrao.jpg"
+         class="baralho-img" />
+
+        <h1>@Model.Nome</h1>
+
+        <p>
+            @Model.Descricao
+        </p>
+
+        <div class="details-meta">
+
+            <span>
+                📚 @Model.Materia?.Nome
+            </span>
+
+            <span>
+                🏷 @Model.Categoria?.Nome
+            </span>
+
+        </div>
+
+        <div class="mt-3">
+
+            <a class="btn btn-success">
+                Estudar
+            </a>
+
+            <a asp-action="Edit"
+               asp-route-id="@Model.BaralhoId"
+               class="btn btn-warning">
+
+                Editar
+
+            </a>
+
+            <a asp-action="Delete"
+               asp-route-id="@Model.BaralhoId"
+               class="btn btn-danger">
+
+                Excluir
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>

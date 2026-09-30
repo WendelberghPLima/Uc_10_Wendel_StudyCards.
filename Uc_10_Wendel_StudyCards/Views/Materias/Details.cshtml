@@ -1,0 +1,31 @@
+﻿@model Uc_10_Wendel_StudyCards.Models.Materia
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="details-card">
+
+    <h1>@Model.Nome</h1>
+
+    <p>
+        @Model.Descricao
+    </p>
+
+    <a asp-action="Edit"
+       asp-route-id="@Model.MateriaId"
+       class="btn btn-warning">
+
+        Editar
+
+    </a>
+
+    <a asp-action="Delete"
+       asp-route-id="@Model.MateriaId"
+       class="btn btn-danger">
+
+        Excluir
+
+    </a>
+
+</div>

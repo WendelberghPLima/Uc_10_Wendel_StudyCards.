@@ -1,0 +1,236 @@
+:root {
+    --roxo-principal: #6C3CC9;
+    --roxo-escuro: #45238A;
+    --amarelo: #F5C542;
+    --branco: #FFFFFF;
+    --cinza: #E5E7EB;
+    --fundo: #F8F9FC;
+    --texto: #1F2937;
+}
+
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--texto);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* NAVBAR */
+
+.navbar {
+    padding: 15px 0;
+}
+
+.logo-studycards {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--roxo-principal) !important;
+}
+
+.logo-text {
+    color: var(--amarelo);
+}
+
+.logo-navbar {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: .2s;
+}
+
+.nav-link:hover {
+    color: var(--roxo-principal) !important;
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        var(--roxo-principal),
+        var(--roxo-escuro)
+    );
+
+    color: white;
+
+    padding: 70px 50px;
+
+    border-radius: 25px;
+
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-card img {
+    width: 340px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* BOTÕES */
+
+.btn-warning {
+    background: var(--amarelo);
+    border: none;
+    font-weight: 600;
+}
+
+.btn-warning:hover {
+    filter: brightness(95%);
+}
+
+.btn-outline-light:hover {
+    color: var(--roxo-principal);
+}
+
+/* ESTATÍSTICAS */
+
+.stats {
+    margin-bottom: 70px;
+}
+
+.stats h3 {
+    color: var(--roxo-principal);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.stats p {
+    margin-top: 5px;
+    color: #666;
+}
+
+/* BENEFÍCIOS */
+
+.beneficios {
+    margin-bottom: 70px;
+}
+
+.beneficios h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    height: 100%;
+    transition: .3s;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+.feature-card h4 {
+    color: var(--roxo-principal);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+/* TIMELINE */
+
+.timeline-section {
+    margin-bottom: 80px;
+}
+
+.timeline-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.timeline {
+    max-width: 900px;
+    margin: auto;
+}
+
+.timeline div {
+    background: white;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-left: 6px solid var(--roxo-principal);
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0,0,0,.06);
+}
+
+/* FOOTER */
+
+.footer-studycards {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 80px;
+}
+
+.footer-studycards h5 {
+    color: var(--amarelo);
+    margin-bottom: 10px;
+}
+
+.footer-studycards p {
+    margin-bottom: 10px;
+}
+
+/* FOCUS */
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 .15rem white,
+                0 0 0 .25rem var(--roxo-principal);
+}

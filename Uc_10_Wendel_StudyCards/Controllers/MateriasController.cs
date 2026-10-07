@@ -20,9 +20,19 @@ namespace Uc_10_Wendel_StudyCards.Controllers
         }
 
         // GET: Materias
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Materia.ToListAsync());
+            var materias = _context.Materia.AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                materias = materias.Where(m =>
+                    m.Nome.Contains(searchString));
+            }
+
+            ViewData["CurrentFilter"] = searchString;
+
+            return View(await materias.ToListAsync());
         }
 
         // GET: Materias/Details/5
@@ -48,6 +58,7 @@ namespace Uc_10_Wendel_StudyCards.Controllers
         {
             return View();
         }
+
 
         // POST: Materias/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
@@ -152,6 +163,35 @@ namespace Uc_10_Wendel_StudyCards.Controllers
         private bool MateriaExists(int id)
         {
             return _context.Materia.Any(e => e.MateriaId == id);
+        }
+
+        public async Task<IActionResult> Dashboard(int id)
+        {
+            var materia = await _context.Materia
+                .Include(m => m.Baralhos)
+                    .ThenInclude(b => b.Cards)
+                .FirstOrDefaultAsync(m => m.MateriaId == id);
+
+            if (materia == null)
+            {
+                return NotFound();
+            }
+
+            return View(materia);
+        }
+
+        public async Task<IActionResult> Baralhos(int id)
+        {
+            var materia = await _context.Materia
+                .Include(m => m.Baralhos)
+                .FirstOrDefaultAsync(m => m.MateriaId == id);
+
+            if (materia == null)
+            {
+                return NotFound();
+            }
+
+            return View(materia);
         }
     }
 }

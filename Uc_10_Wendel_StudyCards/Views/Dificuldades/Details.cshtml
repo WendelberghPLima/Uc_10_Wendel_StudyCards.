@@ -1,24 +1,36 @@
 ﻿@model Uc_10_Wendel_StudyCards.Models.Dificuldade
 
-@{
-    ViewData["Title"] = "Details";
-}
+<div class="baralho-details">
 
-<h1>Details</h1>
+    <h1>@Model.Nome</h1>
 
-<div>
-    <h4>Dificuldade</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nome)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nome)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.DificuldadeId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <div class="details-meta">
+
+        <span>
+            ID: @Model.DificuldadeId
+        </span>
+
+    </div>
+
+    <div class="entity-actions">
+
+        <a asp-action="Edit"
+           asp-route-id="@Model.DificuldadeId"
+           class="btn btn-warning">
+            Editar
+        </a>
+
+        <a asp-action="Delete"
+           asp-route-id="@Model.DificuldadeId"
+           class="btn btn-danger">
+            Excluir
+        </a>
+
+        <a asp-action="Index"
+           class="btn btn-secondary">
+            Voltar
+        </a>
+
+    </div>
+
 </div>

@@ -1,54 +1,69 @@
 ﻿@model Uc_10_Wendel_StudyCards.Models.Baralho
 
-@{
-    ViewData["Title"] = "Edit";
-}
-
-<h1>Edit</h1>
-
-<h4>Baralho</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="BaralhoId" />
-            <div class="form-group">
-                <label asp-for="Nome" class="control-label"></label>
-                <input asp-for="Nome" class="form-control" />
-                <span asp-validation-for="Nome" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Descricao" class="control-label"></label>
-                <input asp-for="Descricao" class="form-control" />
-                <span asp-validation-for="Descricao" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ImagemUrl" class="control-label"></label>
-                <input asp-for="ImagemUrl" class="form-control" />
-                <span asp-validation-for="ImagemUrl" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MateriaId" class="control-label"></label>
-                <select asp-for="MateriaId" class="form-control" asp-items="ViewBag.MateriaId"></select>
-                <span asp-validation-for="MateriaId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CategoriaId" class="control-label"></label>
-                <select asp-for="CategoriaId" class="form-control" asp-items="ViewBag.CategoriaId"></select>
-                <span asp-validation-for="CategoriaId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
+<div class="page-header">
+    <h1>Editar Baralho</h1>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+<div class="baralho-details">
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+    <form asp-action="Edit">
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <input type="hidden" asp-for="BaralhoId" />
+
+        <div class="mb-3">
+            <label asp-for="Nome" class="form-label"></label>
+            <input asp-for="Nome" class="form-control" />
+            <span asp-validation-for="Nome" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Descricao" class="form-label"></label>
+            <textarea asp-for="Descricao"
+                      class="form-control"
+                      rows="4"></textarea>
+            <span asp-validation-for="Descricao" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="ImagemUrl" class="form-label"></label>
+            <input asp-for="ImagemUrl" class="form-control" />
+            <span asp-validation-for="ImagemUrl" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="MateriaId" class="form-label"></label>
+            <select asp-for="MateriaId"
+                    asp-items="ViewBag.MateriaId"
+                    class="form-select">
+            </select>
+            <span asp-validation-for="MateriaId" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="CategoriaId" class="form-label"></label>
+            <select asp-for="CategoriaId"
+                    asp-items="ViewBag.CategoriaId"
+                    class="form-select">
+            </select>
+            <span asp-validation-for="CategoriaId" class="text-danger"></span>
+        </div>
+
+        <div class="entity-actions">
+
+            <button type="submit"
+                    class="btn btn-warning">
+                Atualizar
+            </button>
+
+            <a asp-action="Index"
+               class="btn btn-secondary">
+                Voltar
+            </a>
+
+        </div>
+
+    </form>
+
+</div>

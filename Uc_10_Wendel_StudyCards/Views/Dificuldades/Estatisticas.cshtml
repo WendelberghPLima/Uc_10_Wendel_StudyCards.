@@ -1,0 +1,21 @@
+﻿@model Uc_10_Wendel_StudyCards.Models.Dificuldade
+
+<h1>
+    Estatísticas - @Model.Nome
+</h1>
+
+<div class="dashboard-grid">
+
+    <div class="dashboard-card">
+
+        <h2>
+            @(Model.Cards?.Count() ?? 0)
+        </h2>
+
+        <p>
+            Cards nesta dificuldade
+        </p>
+
+    </div>
+
+</div>

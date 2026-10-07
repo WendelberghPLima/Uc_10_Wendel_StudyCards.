@@ -153,5 +153,29 @@ namespace Uc_10_Wendel_StudyCards.Controllers
         {
             return _context.Dificuldade.Any(e => e.DificuldadeId == id);
         }
+
+        public async Task<IActionResult> Cards(int id)
+        {
+            var dificuldade = await _context.Dificuldade
+                .Include(d => d.Cards)
+                .FirstOrDefaultAsync(d => d.DificuldadeId == id);
+
+            if (dificuldade == null)
+                return NotFound();
+
+            return View(dificuldade);
+        }
+
+        public async Task<IActionResult> Estatisticas(int id)
+        {
+            var dificuldade = await _context.Dificuldade
+                .Include(d => d.Cards)
+                .FirstOrDefaultAsync(d => d.DificuldadeId == id);
+
+            if (dificuldade == null)
+                return NotFound();
+
+            return View(dificuldade);
+        }
     }
 }

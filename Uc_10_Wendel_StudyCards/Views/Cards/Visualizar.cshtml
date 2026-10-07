@@ -1,0 +1,35 @@
+﻿@model Uc_10_Wendel_StudyCards.Models.Card
+
+<div class="baralho-details">
+
+    <h2>
+        Pergunta
+    </h2>
+
+    <p>
+        @Model.Pergunta
+    </p>
+
+    <hr />
+
+    <h2>
+        Resposta
+    </h2>
+
+    <p>
+        @Model.Resposta
+    </p>
+
+    <div class="details-meta">
+
+        <span>
+            🎴 @Model.Baralho?.Nome
+        </span>
+
+        <span>
+            ⭐ @Model.Dificuldade?.Nome
+        </span>
+
+    </div>
+
+</div>

@@ -1,51 +1,61 @@
 ﻿@model Uc_10_Wendel_StudyCards.Models.Card
 
-@{
-    ViewData["Title"] = "Create";
-}
-
-<h1>Create</h1>
-
-<h4>Card</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Pergunta" class="control-label"></label>
-                <input asp-for="Pergunta" class="form-control" />
-                <span asp-validation-for="Pergunta" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Resposta" class="control-label"></label>
-                <input asp-for="Resposta" class="form-control" />
-                <span asp-validation-for="Resposta" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DataCriacao" class="control-label"></label>
-                <input asp-for="DataCriacao" class="form-control" />
-                <span asp-validation-for="DataCriacao" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="BaralhoId" class="control-label"></label>
-                <select asp-for="BaralhoId" class ="form-control" asp-items="ViewBag.BaralhoId"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="DificuldadeId" class="control-label"></label>
-                <select asp-for="DificuldadeId" class ="form-control" asp-items="ViewBag.DificuldadeId"></select>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
+<div class="page-header">
+    <h1>Criar Card</h1>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+<div class="baralho-details">
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+    <form asp-action="Create">
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="mb-3">
+            <label asp-for="Pergunta" class="form-label"></label>
+            <textarea asp-for="Pergunta"
+                      class="form-control"
+                      rows="4"></textarea>
+            <span asp-validation-for="Pergunta" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Resposta" class="form-label"></label>
+            <textarea asp-for="Resposta"
+                      class="form-control"
+                      rows="6"></textarea>
+            <span asp-validation-for="Resposta" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="BaralhoId" class="form-label"></label>
+            <select asp-for="BaralhoId"
+                    asp-items="ViewBag.BaralhoId"
+                    class="form-select">
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="DificuldadeId" class="form-label"></label>
+            <select asp-for="DificuldadeId"
+                    asp-items="ViewBag.DificuldadeId"
+                    class="form-select">
+            </select>
+        </div>
+
+        <div class="entity-actions">
+
+            <button type="submit"
+                    class="btn btn-warning">
+                Salvar
+            </button>
+
+            <a asp-action="Index"
+               class="btn btn-secondary">
+                Voltar
+            </a>
+
+        </div>
+
+    </form>
+
+</div>

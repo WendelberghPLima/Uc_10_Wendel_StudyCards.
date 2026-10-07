@@ -1,0 +1,54 @@
+﻿@model Uc_10_Wendel_StudyCards.Models.Materia
+
+<div class="page-header">
+
+    <h1>
+        Dashboard - @Model.Nome
+    </h1>
+
+</div>
+
+<div class="dashboard-grid">
+
+    <div class="dashboard-card">
+
+        <h2>
+            @(Model.Baralhos?.Count ?? 0)
+        </h2>
+
+        <p>
+            Baralhos
+        </p>
+
+    </div>
+
+    <div class="dashboard-card">
+
+        <h2>
+            @(Model.Baralhos?
+                        .SelectMany(b => b.Cards ?? Enumerable.Empty<Uc_10_Wendel_StudyCards.Models.Card>())
+                        .Count() ?? 0)
+        </h2>
+
+        <p>
+            Cards
+        </p>
+
+    </div>
+
+    <div class="dashboard-card">
+
+        <h2>
+            @(Model.Baralhos?
+                        .Select(b => b.CategoriaId)
+                        .Distinct()
+                        .Count() ?? 0)
+        </h2>
+
+        <p>
+            Categorias
+        </p>
+
+    </div>
+
+</div>

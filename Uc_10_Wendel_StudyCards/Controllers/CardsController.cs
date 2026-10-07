@@ -20,10 +20,19 @@ namespace Uc_10_Wendel_StudyCards.Controllers
         }
 
         // GET: Cards
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            var uc_10_Wendel_StudyCardsContext = _context.Card.Include(c => c.Baralho).Include(c => c.Dificuldade);
-            return View(await uc_10_Wendel_StudyCardsContext.ToListAsync());
+            var cards = _context.Card.AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                cards = cards.Where(m =>
+                    m.Pergunta.Contains(searchString));
+            }
+
+            ViewData["CurrentFilter"] = searchString;
+
+            return View(await cards.ToListAsync());
         }
 
         // GET: Cards/Details/5
@@ -165,6 +174,32 @@ namespace Uc_10_Wendel_StudyCards.Controllers
         private bool CardExists(int id)
         {
             return _context.Card.Any(e => e.CardId == id);
+        }
+
+        public async Task<IActionResult> Visualizar(int id)
+        {
+            var card = await _context.Card
+                .Include(c => c.Baralho)
+                .Include(c => c.Dificuldade)
+                .FirstOrDefaultAsync(c => c.CardId == id);
+
+            if (card == null)
+                return NotFound();
+
+            return View(card);
+        }
+
+        public async Task<IActionResult> Praticar(int id)
+        {
+            var card = await _context.Card
+                .Include(c => c.Baralho)
+                .Include(c => c.Dificuldade)
+                .FirstOrDefaultAsync(c => c.CardId == id);
+
+            if (card == null)
+                return NotFound();
+
+            return View(card);
         }
     }
 }

@@ -20,10 +20,19 @@ namespace Uc_10_Wendel_StudyCards.Controllers
         }
 
         // GET: Baralhoes
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            var uc_10_Wendel_StudyCardsContext = _context.Baralho.Include(b => b.Categoria).Include(b => b.Materia);
-            return View(await uc_10_Wendel_StudyCardsContext.ToListAsync());
+            var baralhos = _context.Baralho.AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                baralhos = baralhos.Where(m =>
+                    m.Nome.Contains(searchString));
+            }
+
+            ViewData["CurrentFilter"] = searchString;
+
+            return View(await baralhos.ToListAsync());
         }
 
         // GET: Baralhoes/Details/5
@@ -166,5 +175,30 @@ namespace Uc_10_Wendel_StudyCards.Controllers
         {
             return _context.Baralho.Any(e => e.BaralhoId == id);
         }
+        public async Task<IActionResult> Cards(int id)
+        {
+            var baralho = await _context.Baralho
+                .Include(b => b.Cards)
+                .ThenInclude(c => c.Dificuldade)
+                .FirstOrDefaultAsync(b => b.BaralhoId == id);
+
+            if (baralho == null)
+                return NotFound();
+
+            return View(baralho);
+        }
+
+        public async Task<IActionResult> Estudar(int id)
+        {
+            var card = await _context.Card
+                .Where(c => c.BaralhoId == id)
+                .FirstOrDefaultAsync();
+
+            if (card == null)
+                return NotFound();
+
+            return View(card);
+        }
+
     }
 }

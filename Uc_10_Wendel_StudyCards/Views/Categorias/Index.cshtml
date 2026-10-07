@@ -1,41 +1,80 @@
 ﻿@model IEnumerable<Uc_10_Wendel_StudyCards.Models.Categoria>
 
-@{
-    ViewData["Title"] = "Index";
-}
+<div class="page-header">
 
-<h1>Index</h1>
+    <h1>Categorias</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Descricao)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Descricao)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.CategoriaId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.CategoriaId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.CategoriaId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <a asp-action="Create"
+       class="btn btn-primary">
+
+        + Nova Categoria
+
+    </a>
+
+</div>
+
+<form asp-action="Index" method="get">
+
+    <div class="input-group mb-3">
+
+        <input type="text"
+               class="form-control"
+               placeholder="Pesquisar categoria"
+               name="searchString"
+               value="@ViewData["CurrentFilter"]" />
+
+        <button class="btn btn-primary"
+                type="submit">
+            Pesquisar
+        </button>
+
+    </div>
+
+</form>
+
+<div class="cards-grid">
+
+    @foreach (var item in Model)
+    {
+        <div class="custom-card">
+
+            <div class="custom-card-body">
+
+                <h3>@item.Nome</h3>
+
+                <p>@item.Descricao</p>
+
+                <div class="entity-actions">
+
+                    <a asp-action="Details"
+                       asp-route-id="@item.CategoriaId"
+                       class="btn btn-outline-primary">
+
+                        Detalhes
+
+                    </a>
+
+                    <a asp-action="Dashboard"
+                       asp-route-id="@item.CategoriaId"
+                       class="btn btn-outline-secondary">
+
+                        Dashboard
+
+                    </a>
+
+                    <a asp-action="Baralhos"
+                       asp-route-id="@item.CategoriaId"
+                       class="btn btn-success">
+
+                        Baralhos
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    }
+
+</div>

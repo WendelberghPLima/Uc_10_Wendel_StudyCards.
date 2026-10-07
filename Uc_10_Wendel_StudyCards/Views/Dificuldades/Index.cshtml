@@ -1,35 +1,52 @@
 ﻿@model IEnumerable<Uc_10_Wendel_StudyCards.Models.Dificuldade>
 
-@{
-    ViewData["Title"] = "Index";
-}
+<div class="page-header">
 
-<h1>Index</h1>
+    <h1>Dificuldades</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.DificuldadeId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.DificuldadeId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.DificuldadeId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+</div>
+
+<div class="cards-grid">
+
+    @foreach (var item in Model)
+    {
+        <div class="custom-card">
+
+            <div class="custom-card-body">
+
+                <h3>@item.Nome</h3>
+
+                <div class="entity-actions">
+
+                    <a asp-action="Details"
+                       asp-route-id="@item.DificuldadeId"
+                       class="btn btn-outline-primary">
+
+                        Detalhes
+
+                    </a>
+
+                    <a asp-action="Cards"
+                       asp-route-id="@item.DificuldadeId"
+                       class="btn btn-outline-secondary">
+
+                        Cards
+
+                    </a>
+
+                    <a asp-action="Estatisticas"
+                       asp-route-id="@item.DificuldadeId"
+                       class="btn btn-success">
+
+                        Estatísticas
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    }
+
+</div>

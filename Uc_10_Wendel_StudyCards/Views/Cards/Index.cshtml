@@ -1,59 +1,96 @@
 ﻿@model IEnumerable<Uc_10_Wendel_StudyCards.Models.Card>
 
-@{
-    ViewData["Title"] = "Index";
-}
+<div class="page-header">
 
-<h1>Index</h1>
+    <h1>Cards</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Pergunta)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Resposta)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DataCriacao)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Baralho)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Dificuldade)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Pergunta)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Resposta)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DataCriacao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Baralho.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Dificuldade.Nome)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.CardId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.CardId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.CardId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <a asp-action="Create"
+       class="btn btn-primary">
+
+        + Novo Card
+
+    </a>
+
+</div>
+
+<form asp-action="Index" method="get">
+
+    <div class="input-group mb-3">
+
+        <input type="text"
+               class="form-control"
+               placeholder="Pesquisar card"
+               name="searchString"
+               value="@ViewData["CurrentFilter"]" />
+
+        <button class="btn btn-primary"
+                type="submit">
+            Pesquisar
+        </button>
+
+    </div>
+
+</form>
+
+<div class="cards-grid">
+
+    @foreach (var item in Model)
+    {
+        <div class="custom-card">
+
+            <div class="custom-card-body">
+
+                <h3>
+                    @item.Pergunta
+                </h3>
+
+                <p>
+                    @item.Resposta
+                </p>
+
+                <div class="baralho-meta">
+
+                    <span>
+                        🎴 @item.Baralho?.Nome
+                    </span>
+
+                    <span>
+                        ⭐ @item.Dificuldade?.Nome
+                    </span>
+
+                </div>
+
+                <div class="entity-actions">
+
+                    <a asp-action="Details"
+                       asp-route-id="@item.CardId"
+                       class="btn btn-outline-primary">
+
+                        Detalhes
+
+                    </a>
+
+                    <a asp-action="Visualizar"
+                       asp-route-id="@item.CardId"
+                       class="btn btn-outline-secondary">
+
+                        Visualizar
+
+                    </a>
+
+                    <a asp-action="Praticar"
+                       asp-route-id="@item.CardId"
+                       class="btn btn-success">
+
+                        Praticar
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    }
+
+</div>

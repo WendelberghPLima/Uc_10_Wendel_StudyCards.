@@ -1,0 +1,33 @@
+﻿@model Uc_10_Wendel_StudyCards.Models.Categoria
+
+<h1>
+    Baralhos da Categoria @Model.Nome
+</h1>
+
+<div class="cards-grid">
+
+    @foreach (var item in Model.Baralhos)
+    {
+        <div class="baralho-card">
+
+            <div class="custom-card-body">
+
+                <h3>@item.Nome</h3>
+
+                <p>@item.Descricao</p>
+
+                <a asp-controller="Baralhoes"
+                   asp-action="Details"
+                   asp-route-id="@item.BaralhoId"
+                   class="btn btn-outline-primary">
+
+                    Ver Baralho
+
+                </a>
+
+            </div>
+
+        </div>
+    }
+
+</div>

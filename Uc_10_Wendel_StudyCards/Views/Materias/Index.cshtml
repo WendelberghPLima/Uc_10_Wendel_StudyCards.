@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Uc_10_Wendel_StudyCards.Models.Materia>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Matérias";
 }
 
 <div class="page-header">
@@ -10,34 +10,71 @@
 
     <a asp-action="Create"
        class="btn btn-primary">
+
         + Nova Matéria
+
     </a>
 
 </div>
 
-<div class="row">
+<form asp-action="Index" method="get">
 
-    @foreach(var item in Model)
+    <div class="input-group mb-3">
+
+        <input type="text"
+               class="form-control"
+               placeholder="Pesquisar matéria"
+               name="searchString"
+               value="@ViewData["CurrentFilter"]" />
+
+        <button class="btn btn-primary"
+                type="submit">
+            Pesquisar
+        </button>
+
+    </div>
+
+</form>
+
+<div class="cards-grid">
+
+    @foreach (var item in Model)
     {
-        <div class="col-md-3 mb-4">
+        <div class="custom-card">
 
-            <div class="card-body">
+            <div class="custom-card-body">
 
-                <h4 class="card-title">
-                    @item.Nome
-                </h4>
+                <h3>@item.Nome</h3>
 
-                <p class="card-text">
-                    @item.Descricao
-                </p>
+                <p>@item.Descricao</p>
 
-                <a asp-action="Details"
-                   asp-route-id="@item.MateriaId"
-                   class="btn btn-outline-primary">
+                <div class="entity-actions">
 
-                    Ver detalhes
+                    <a asp-action="Details"
+                       asp-route-id="@item.MateriaId"
+                       class="btn btn-outline-primary">
 
-                </a>
+                        Detalhes
+
+                    </a>
+
+                    <a asp-action="Dashboard"
+                       asp-route-id="@item.MateriaId"
+                       class="btn btn-outline-secondary">
+
+                        Dashboard
+
+                    </a>
+
+                    <a asp-action="Baralhos"
+                       asp-route-id="@item.MateriaId"
+                       class="btn btn-success">
+
+                        Baralhos
+
+                    </a>
+
+                </div>
 
             </div>
 

@@ -1,0 +1,29 @@
+﻿@model Uc_10_Wendel_StudyCards.Models.Categoria
+
+<h1>
+    Dashboard - @Model.Nome
+</h1>
+
+<div class="dashboard-grid">
+
+    <div class="dashboard-card">
+
+        <h2>
+            @(Model.Baralhos?.Count() ?? 0)
+        </h2>
+
+        <p>
+            Baralhos
+        </p>
+
+    </div>
+
+</div>
+
+<a asp-action="Baralhos"
+   asp-route-id="@Model.CategoriaId"
+   class="btn btn-primary">
+
+    Ver Baralhos
+
+</a>

@@ -20,9 +20,19 @@ namespace Uc_10_Wendel_StudyCards.Controllers
         }
 
         // GET: Categorias
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Categoria.ToListAsync());
+            var categorias = _context.Categoria.AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                categorias = categorias.Where(m =>
+                    m.Nome.Contains(searchString));
+            }
+
+            ViewData["CurrentFilter"] = searchString;
+
+            return View(await categorias.ToListAsync());
         }
 
         // GET: Categorias/Details/5
@@ -152,6 +162,30 @@ namespace Uc_10_Wendel_StudyCards.Controllers
         private bool CategoriaExists(int id)
         {
             return _context.Categoria.Any(e => e.CategoriaId == id);
+        }
+
+        public async Task<IActionResult> Dashboard(int id)
+        {
+            var categoria = await _context.Categoria
+                .Include(c => c.Baralhos)
+                .FirstOrDefaultAsync(c => c.CategoriaId == id);
+
+            if (categoria == null)
+                return NotFound();
+
+            return View(categoria);
+        }
+
+        public async Task<IActionResult> Baralhos(int id)
+        {
+            var categoria = await _context.Categoria
+                .Include(c => c.Baralhos)
+                .FirstOrDefaultAsync(c => c.CategoriaId == id);
+
+            if (categoria == null)
+                return NotFound();
+
+            return View(categoria);
         }
     }
 }

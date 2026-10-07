@@ -28,6 +28,10 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/wendelbergh.plima/source/repos/UC10/Uc_10_Wendel_StudyCards/Uc_10_Wendel_StudyCards/Views/Baralhoes/Cards.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFyYWxob2VzXENhcmRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/wendelbergh.plima/source/repos/UC10/Uc_10_Wendel_StudyCards/Uc_10_Wendel_StudyCards/Views/Baralhoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFyYWxob2VzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -42,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/wendelbergh.plima/source/repos/UC10/Uc_10_Wendel_StudyCards/Uc_10_Wendel_StudyCards/Views/Baralhoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFyYWxob2VzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wendelbergh.plima/source/repos/UC10/Uc_10_Wendel_StudyCards/Uc_10_Wendel_StudyCards/Views/Baralhoes/Estudar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFyYWxob2VzXEVzdHVkYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/wendelbergh.plima/source/repos/UC10/Uc_10_Wendel_StudyCards/Uc_10_Wendel_StudyCards/Views/Baralhoes/Index.cshtml]
@@ -68,8 +76,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/wendelbergh.plima/source/repos/UC10/Uc_10_Wendel_StudyCards/Uc_10_Wendel_StudyCards/Views/Cards/Praticar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZHNcUHJhdGljYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wendelbergh.plima/source/repos/UC10/Uc_10_Wendel_StudyCards/Uc_10_Wendel_StudyCards/Views/Cards/Visualizar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyZHNcVmlzdWFsaXphci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wendelbergh.plima/source/repos/UC10/Uc_10_Wendel_StudyCards/Uc_10_Wendel_StudyCards/Views/Categorias/Baralhos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xCYXJhbGhvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/wendelbergh.plima/source/repos/UC10/Uc_10_Wendel_StudyCards/Uc_10_Wendel_StudyCards/Views/Categorias/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wendelbergh.plima/source/repos/UC10/Uc_10_Wendel_StudyCards/Uc_10_Wendel_StudyCards/Views/Categorias/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/wendelbergh.plima/source/repos/UC10/Uc_10_Wendel_StudyCards/Uc_10_Wendel_StudyCards/Views/Categorias/Delete.cshtml]
@@ -88,6 +112,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/wendelbergh.plima/source/repos/UC10/Uc_10_Wendel_StudyCards/Uc_10_Wendel_StudyCards/Views/Dificuldades/Cards.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlmaWN1bGRhZGVzXENhcmRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/wendelbergh.plima/source/repos/UC10/Uc_10_Wendel_StudyCards/Uc_10_Wendel_StudyCards/Views/Dificuldades/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlmaWN1bGRhZGVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -104,8 +132,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlmaWN1bGRhZGVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/wendelbergh.plima/source/repos/UC10/Uc_10_Wendel_StudyCards/Uc_10_Wendel_StudyCards/Views/Dificuldades/Estatisticas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlmaWN1bGRhZGVzXEVzdGF0aXN0aWNhcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/wendelbergh.plima/source/repos/UC10/Uc_10_Wendel_StudyCards/Uc_10_Wendel_StudyCards/Views/Dificuldades/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlmaWN1bGRhZGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wendelbergh.plima/source/repos/UC10/Uc_10_Wendel_StudyCards/Uc_10_Wendel_StudyCards/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/wendelbergh.plima/source/repos/UC10/Uc_10_Wendel_StudyCards/Uc_10_Wendel_StudyCards/Views/Home/Index.cshtml]
@@ -116,8 +152,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/wendelbergh.plima/source/repos/UC10/Uc_10_Wendel_StudyCards/Uc_10_Wendel_StudyCards/Views/Materias/Baralhos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYXNcQmFyYWxob3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/wendelbergh.plima/source/repos/UC10/Uc_10_Wendel_StudyCards/Uc_10_Wendel_StudyCards/Views/Materias/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wendelbergh.plima/source/repos/UC10/Uc_10_Wendel_StudyCards/Uc_10_Wendel_StudyCards/Views/Materias/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYXNcRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/wendelbergh.plima/source/repos/UC10/Uc_10_Wendel_StudyCards/Uc_10_Wendel_StudyCards/Views/Materias/Delete.cshtml]

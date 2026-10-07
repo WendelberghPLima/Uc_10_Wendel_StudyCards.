@@ -1,31 +1,30 @@
 ﻿@model Uc_10_Wendel_StudyCards.Models.Materia
 
-@{
-    ViewData["Title"] = "Details";
-}
-
-<div class="details-card">
+<div class="baralho-details">
 
     <h1>@Model.Nome</h1>
 
-    <p>
-        @Model.Descricao
-    </p>
+    <p>@Model.Descricao</p>
 
-    <a asp-action="Edit"
-       asp-route-id="@Model.MateriaId"
-       class="btn btn-warning">
+    <div class="entity-actions">
 
-        Editar
+        <a asp-action="Edit"
+           asp-route-id="@Model.MateriaId"
+           class="btn btn-warning">
+            Editar
+        </a>
 
-    </a>
+        <a asp-action="Delete"
+           asp-route-id="@Model.MateriaId"
+           class="btn btn-danger">
+            Excluir
+        </a>
 
-    <a asp-action="Delete"
-       asp-route-id="@Model.MateriaId"
-       class="btn btn-danger">
+        <a asp-action="Index"
+           class="btn btn-secondary">
+            Voltar
+        </a>
 
-        Excluir
-
-    </a>
+    </div>
 
 </div>

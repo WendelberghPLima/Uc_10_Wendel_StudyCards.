@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Uc_10_Wendel_StudyCards")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9bd969746cba8da38123647781b2df7734aa200f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8cc49f7d0a96e729ea59fb6524b437b41839d3b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Uc_10_Wendel_StudyCards")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Uc_10_Wendel_StudyCards")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

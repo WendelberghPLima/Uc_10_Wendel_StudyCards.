@@ -3,32 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\wendelbergh.plima\\source\\repos\\UC10\\Uc_10_Wendel_StudyCards\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C813E4EE-6B5D-4943-9B8E-BAC910335DDC}|Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards.csproj|c:\\users\\wendelbergh.plima\\source\\repos\\uc10\\uc_10_wendel_studycards\\uc_10_wendel_studycards\\views\\baralhoes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C813E4EE-6B5D-4943-9B8E-BAC910335DDC}|Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards.csproj|solutionrelative:uc_10_wendel_studycards\\views\\baralhoes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C813E4EE-6B5D-4943-9B8E-BAC910335DDC}|Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards.csproj|c:\\users\\wendelbergh.plima\\source\\repos\\uc10\\uc_10_wendel_studycards\\uc_10_wendel_studycards\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C813E4EE-6B5D-4943-9B8E-BAC910335DDC}|Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards.csproj|solutionrelative:uc_10_wendel_studycards\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C813E4EE-6B5D-4943-9B8E-BAC910335DDC}|Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards.csproj|c:\\users\\wendelbergh.plima\\source\\repos\\uc10\\uc_10_wendel_studycards\\uc_10_wendel_studycards\\views\\baralhoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C813E4EE-6B5D-4943-9B8E-BAC910335DDC}|Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards.csproj|solutionrelative:uc_10_wendel_studycards\\views\\baralhoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C813E4EE-6B5D-4943-9B8E-BAC910335DDC}|Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards.csproj|c:\\users\\wendelbergh.plima\\source\\repos\\uc10\\uc_10_wendel_studycards\\uc_10_wendel_studycards\\views\\categorias\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C813E4EE-6B5D-4943-9B8E-BAC910335DDC}|Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards.csproj|solutionrelative:uc_10_wendel_studycards\\views\\categorias\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C813E4EE-6B5D-4943-9B8E-BAC910335DDC}|Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards.csproj|c:\\users\\wendelbergh.plima\\source\\repos\\uc10\\uc_10_wendel_studycards\\uc_10_wendel_studycards\\views\\materias\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C813E4EE-6B5D-4943-9B8E-BAC910335DDC}|Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards.csproj|solutionrelative:uc_10_wendel_studycards\\views\\materias\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C813E4EE-6B5D-4943-9B8E-BAC910335DDC}|Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards.csproj|c:\\users\\wendelbergh.plima\\source\\repos\\uc10\\uc_10_wendel_studycards\\uc_10_wendel_studycards\\views\\materias\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C813E4EE-6B5D-4943-9B8E-BAC910335DDC}|Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards.csproj|solutionrelative:uc_10_wendel_studycards\\views\\materias\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C813E4EE-6B5D-4943-9B8E-BAC910335DDC}|Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards.csproj|c:\\users\\wendelbergh.plima\\source\\repos\\uc10\\uc_10_wendel_studycards\\uc_10_wendel_studycards\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C813E4EE-6B5D-4943-9B8E-BAC910335DDC}|Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards.csproj|solutionrelative:uc_10_wendel_studycards\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C813E4EE-6B5D-4943-9B8E-BAC910335DDC}|Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards.csproj|c:\\users\\wendelbergh.plima\\source\\repos\\uc10\\uc_10_wendel_studycards\\uc_10_wendel_studycards\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C813E4EE-6B5D-4943-9B8E-BAC910335DDC}|Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards.csproj|solutionrelative:uc_10_wendel_studycards\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C813E4EE-6B5D-4943-9B8E-BAC910335DDC}|Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards.csproj|c:\\users\\wendelbergh.plima\\source\\repos\\uc10\\uc_10_wendel_studycards\\uc_10_wendel_studycards\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{C813E4EE-6B5D-4943-9B8E-BAC910335DDC}|Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards.csproj|solutionrelative:uc_10_wendel_studycards\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{C813E4EE-6B5D-4943-9B8E-BAC910335DDC}|Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards.csproj|c:\\users\\wendelbergh.plima\\source\\repos\\uc10\\uc_10_wendel_studycards\\uc_10_wendel_studycards\\controllers\\materiascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C813E4EE-6B5D-4943-9B8E-BAC910335DDC}|Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards.csproj|solutionrelative:uc_10_wendel_studycards\\controllers\\materiascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,47 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\wendelbergh.plima\\source\\repos\\UC10\\Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards\\Views\\Baralhoes\\Details.cshtml",
-              "RelativeDocumentMoniker": "Uc_10_Wendel_StudyCards\\Views\\Baralhoes\\Details.cshtml",
-              "ToolTip": "C:\\Users\\wendelbergh.plima\\source\\repos\\UC10\\Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards\\Views\\Baralhoes\\Details.cshtml",
-              "RelativeToolTip": "Uc_10_Wendel_StudyCards\\Views\\Baralhoes\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-30T20:12:00.157Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\wendelbergh.plima\\source\\repos\\UC10\\Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards\\Views\\Baralhoes\\Index.cshtml",
-              "RelativeDocumentMoniker": "Uc_10_Wendel_StudyCards\\Views\\Baralhoes\\Index.cshtml",
-              "ToolTip": "C:\\Users\\wendelbergh.plima\\source\\repos\\UC10\\Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards\\Views\\Baralhoes\\Index.cshtml",
-              "RelativeToolTip": "Uc_10_Wendel_StudyCards\\Views\\Baralhoes\\Index.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAEAAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-30T20:05:35.037Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\wendelbergh.plima\\source\\repos\\UC10\\Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards\\Views\\Materias\\Details.cshtml",
-              "RelativeDocumentMoniker": "Uc_10_Wendel_StudyCards\\Views\\Materias\\Details.cshtml",
-              "ToolTip": "C:\\Users\\wendelbergh.plima\\source\\repos\\UC10\\Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards\\Views\\Materias\\Details.cshtml",
-              "RelativeToolTip": "Uc_10_Wendel_StudyCards\\Views\\Materias\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-30T20:04:49.022Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -89,54 +38,54 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoriasController.cs",
+              "DocumentMoniker": "C:\\Users\\wendelbergh.plima\\source\\repos\\UC10\\Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards\\Controllers\\CategoriasController.cs",
+              "RelativeDocumentMoniker": "Uc_10_Wendel_StudyCards\\Controllers\\CategoriasController.cs",
+              "ToolTip": "C:\\Users\\wendelbergh.plima\\source\\repos\\UC10\\Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards\\Controllers\\CategoriasController.cs",
+              "RelativeToolTip": "Uc_10_Wendel_StudyCards\\Controllers\\CategoriasController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T19:00:46.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\wendelbergh.plima\\source\\repos\\UC10\\Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards\\Views\\Categorias\\Index.cshtml",
+              "RelativeDocumentMoniker": "Uc_10_Wendel_StudyCards\\Views\\Categorias\\Index.cshtml",
+              "ToolTip": "C:\\Users\\wendelbergh.plima\\source\\repos\\UC10\\Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards\\Views\\Categorias\\Index.cshtml",
+              "RelativeToolTip": "Uc_10_Wendel_StudyCards\\Views\\Categorias\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-07T19:00:37.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\wendelbergh.plima\\source\\repos\\UC10\\Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards\\Views\\Materias\\Index.cshtml",
               "RelativeDocumentMoniker": "Uc_10_Wendel_StudyCards\\Views\\Materias\\Index.cshtml",
               "ToolTip": "C:\\Users\\wendelbergh.plima\\source\\repos\\UC10\\Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards\\Views\\Materias\\Index.cshtml",
               "RelativeToolTip": "Uc_10_Wendel_StudyCards\\Views\\Materias\\Index.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-30T20:00:35.889Z",
+              "WhenOpened": "2026-10-07T18:53:23.811Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\wendelbergh.plima\\source\\repos\\UC10\\Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "Uc_10_Wendel_StudyCards\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\wendelbergh.plima\\source\\repos\\UC10\\Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "Uc_10_Wendel_StudyCards\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-09-30T19:20:30.094Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\wendelbergh.plima\\source\\repos\\UC10\\Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Uc_10_Wendel_StudyCards\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\wendelbergh.plima\\source\\repos\\UC10\\Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Uc_10_Wendel_StudyCards\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAAAIMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-30T18:03:45.977Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\wendelbergh.plima\\source\\repos\\UC10\\Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Uc_10_Wendel_StudyCards\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\wendelbergh.plima\\source\\repos\\UC10\\Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Uc_10_Wendel_StudyCards\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAFoAAAAAAAAAAADwv18AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-30T18:01:47.027Z",
+              "DocumentIndex": 3,
+              "Title": "MateriasController.cs",
+              "DocumentMoniker": "C:\\Users\\wendelbergh.plima\\source\\repos\\UC10\\Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards\\Controllers\\MateriasController.cs",
+              "RelativeDocumentMoniker": "Uc_10_Wendel_StudyCards\\Controllers\\MateriasController.cs",
+              "ToolTip": "C:\\Users\\wendelbergh.plima\\source\\repos\\UC10\\Uc_10_Wendel_StudyCards\\Uc_10_Wendel_StudyCards\\Controllers\\MateriasController.cs",
+              "RelativeToolTip": "Uc_10_Wendel_StudyCards\\Controllers\\MateriasController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA1wCkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T18:52:46.423Z",
               "EditorCaption": ""
             }
           ]

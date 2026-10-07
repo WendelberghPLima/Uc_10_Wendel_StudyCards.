@@ -1,0 +1,42 @@
+﻿@model Uc_10_Wendel_StudyCards.Models.Baralho
+
+<h1>
+    Cards - @Model.Nome
+</h1>
+
+<a asp-controller="Cards"
+   asp-action="Create"
+   class="btn btn-primary mb-4">
+
+    + Novo Card
+
+</a>
+
+<div class="cards-list">
+
+    @foreach (var card in Model.Cards)
+    {
+        <div class="card-item">
+
+            <div class="card-item-info">
+
+                <h5>
+                    @card.Pergunta
+                </h5>
+
+                <p>
+                    @card.Resposta
+                </p>
+
+            </div>
+
+            <div class="card-item-badge">
+
+                @card.Dificuldade?.Nome
+
+            </div>
+
+        </div>
+    }
+
+</div>

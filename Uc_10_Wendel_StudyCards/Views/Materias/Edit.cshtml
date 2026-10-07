@@ -1,39 +1,28 @@
 ﻿@model Uc_10_Wendel_StudyCards.Models.Materia
 
-@{
-    ViewData["Title"] = "Edit";
-}
-
-<h1>Edit</h1>
-
-<h4>Materia</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="MateriaId" />
-            <div class="form-group">
-                <label asp-for="Nome" class="control-label"></label>
-                <input asp-for="Nome" class="form-control" />
-                <span asp-validation-for="Nome" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Descricao" class="control-label"></label>
-                <input asp-for="Descricao" class="form-control" />
-                <span asp-validation-for="Descricao" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
+<div class="page-header">
+    <h1>Editar Matéria</h1>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+<div class="baralho-details">
+    <form asp-action="Edit">
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+        <input type="hidden" asp-for="MateriaId" />
+
+        <div class="mb-3">
+            <label asp-for="Nome" class="form-label"></label>
+            <input asp-for="Nome" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Descricao" class="form-label"></label>
+            <textarea asp-for="Descricao" class="form-control" rows="4"></textarea>
+        </div>
+
+        <div class="entity-actions">
+            <button type="submit" class="btn btn-warning">Atualizar</button>
+            <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,44 @@
+﻿@model Uc_10_Wendel_StudyCards.Models.Card
+
+<div class="estudo-card">
+
+    <h2>
+        Estudando
+    </h2>
+
+    <div class="estudo-pergunta">
+
+        @Model.Pergunta
+
+    </div>
+
+    <button id="mostrarResposta"
+            class="btn btn-primary">
+
+        Mostrar Resposta
+
+    </button>
+
+    <div id="resposta"
+         class="estudo-resposta"
+         style="display:none;">
+
+        @Model.Resposta
+
+    </div>
+
+</div>
+
+<script>
+
+    document
+        .getElementById("mostrarResposta")
+        .addEventListener("click", function () {
+
+            document
+                .getElementById("resposta")
+                .style.display = "block";
+
+        });
+
+</script>
